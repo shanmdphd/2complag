@@ -1,4 +1,4 @@
-Wed Jan  5 04:21:36 UTC 2022
+Wed Jan  5 04:33:47 UTC 2022
 $PROBLEM TWO COMPARTMENT ORAL
 
 $DATA pk_oral2.csv IGNORE=#
@@ -543,6 +543,6 @@ Days until program expires : 159
 +        1.00E+00
  
  Elapsed finaloutput time in seconds:     0.00
- #CPUT: Total CPU Time in Seconds,        0.097
+ #CPUT: Total CPU Time in Seconds,        0.095
 Stop Time:
-Wed Jan  5 04:21:37 UTC 2022
+Wed Jan  5 04:33:48 UTC 2022
