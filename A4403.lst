@@ -1,4 +1,4 @@
-Wed Jan  5 04:33:27 UTC 2022
+Wed Jan  5 04:39:48 UTC 2022
 $PROBLEM TWO COMPARTMENT ORAL
 
 $DATA pk_oral2_full.csv IGNORE=#
@@ -50,7 +50,7 @@ $ESTIMATION METHOD=0 POSTHOC MAXEVAL=9999 PRINT=5
 $COVARIANCE PRINT=E
 
 $TABLE ID TIME IPRED IWRES DV NOPRINT ONEHEADER FILE=sdtab4403
-$TABLE ID CL V2 Q V3 KA ALAG1 NOPRINT ONEHEADER FILE=patab4403
+$TABLE ID CL V2 Q V3 KA ALAG1 NOPRINT ONEHEADER NOAPPEND FILE=patab4403
 
 
 NM-TRAN MESSAGES
@@ -173,7 +173,7 @@ Days until program expires : 159
  ID TIME IPRED IWRES
 0-- TABLE   2 --
 0RECORDS ONLY:    ALL
-04 COLUMNS APPENDED:    YES
+04 COLUMNS APPENDED:    NO
  PRINTED:                NO
  HEADER:                YES
  FILE TO BE FORWARDED:   NO
@@ -642,6 +642,6 @@ Days until program expires : 159
 +        1.00E+00
  
  Elapsed finaloutput time in seconds:     0.01
- #CPUT: Total CPU Time in Seconds,        0.546
+ #CPUT: Total CPU Time in Seconds,        0.552
 Stop Time:
-Wed Jan  5 04:33:29 UTC 2022
+Wed Jan  5 04:39:50 UTC 2022

@@ -1,7 +1,7 @@
 FILE    FSTREAM                                                                 
 PROB    TWO COMPARTMENT ORAL                                                    
 FMTN   3                                                                        
-DATA       1   0  30   6   0   0   0   0          -1   0                        
+DATA       1   0  94   6   0   0   0   0          -1   0                        
 ITEM       1   4   5  11   1   0   0   0   0   0  10   0   0   0   0   0        
 INDX       6   2   3   0   0   0   0   0   0   0   0                            
 XVID       0   0   0   0   0                                                    
@@ -38,7 +38,7 @@ LTHT
 LETA                                                                            
 LEPS                                                                            
 FORM                                                                            
-(5E6.0,1F2.0)
+(5E7.0,1F2.0)
 STRC       8   6   1   0   0   0   6   1   0                                    
 STRC       1   1   1   1   1   1   1   1   1   1   1   1                        
 THCN       1   0   0   0                                                        
@@ -98,7 +98,7 @@ FRML
 FRMR    
 FETA    
 TABL   1   7     1 0    10 0    11 0    12 0    13 0    14 0    15 0            
-           0   1   1   0   0           0           0           0             0-1 0 0
+           0   1   1   0   1           0           0           0             0-1 0 0
 FRML    
 FRMR    
 FETA    
