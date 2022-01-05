@@ -29,12 +29,16 @@ $THETA
   0.2
 
 $OMEGA
-  .25 ;CL
-  .25 ;V2
-  .25 ;Q
-  .25 ;V3
-  .25 ;KA
-  .25 ;ALAG1
+;  .25 ;CL
+;  .25 ;V2
+;  .25 ;Q
+;  .25 ;V3
+  0 FIX ;CL
+  0 FIX ;V2
+  0 FIX ;Q
+  0 FIX ;V3
+  0 FIX ;KA
+  0 FIX ;ALAG1
 
 $SIGMA
   1 FIX ;ERRCV

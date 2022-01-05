@@ -5,7 +5,7 @@ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 xsi:schemaLocation="http://namespaces.oreilly.com/xmlnut/address output.xsd"
 xmlns:nm="http://namespaces.oreilly.com/xmlnut/address"
 >
-<nm:start_datetime>2022-01-05T08:12:44.068</nm:start_datetime>
+<nm:start_datetime>2022-01-05T08:27:03.936</nm:start_datetime>
 <nm:control_stream><![CDATA[
 $PROBLEM TWO COMPARTMENT ORAL
 $DATA pk_oral2_30_90.csv IGNORE=#
@@ -38,12 +38,16 @@ $THETA
   0.2
 
 $OMEGA
-  .25 ;CL
-  .25 ;V2
-  .25 ;Q
-  .25 ;V3
-  .25 ;KA
-  .25 ;ALAG1
+;  .25 ;CL
+;  .25 ;V2
+;  .25 ;Q
+;  .25 ;V3
+  0 FIX ;CL
+  0 FIX ;V2
+  0 FIX ;Q
+  0 FIX ;V3
+  0 FIX ;KA
+  0 FIX ;ALAG1
 
 $SIGMA
   1 FIX ;ERRCV
@@ -123,12 +127,13 @@ Days until program expires : 159
   0.1000E-03     0.1000E-03     0.1000E-03
  -0.1000E+07     0.2000E+00     0.1000E+07
 0INITIAL ESTIMATE OF OMEGA:
- 0.2500E+00
- 0.0000E+00   0.2500E+00
- 0.0000E+00   0.0000E+00   0.2500E+00
- 0.0000E+00   0.0000E+00   0.0000E+00   0.2500E+00
- 0.0000E+00   0.0000E+00   0.0000E+00   0.0000E+00   0.2500E+00
- 0.0000E+00   0.0000E+00   0.0000E+00   0.0000E+00   0.0000E+00   0.2500E+00
+ 0.0000E+00
+ 0.0000E+00   0.0000E+00
+ 0.0000E+00   0.0000E+00   0.0000E+00
+ 0.0000E+00   0.0000E+00   0.0000E+00   0.0000E+00
+ 0.0000E+00   0.0000E+00   0.0000E+00   0.0000E+00   0.0000E+00
+ 0.0000E+00   0.0000E+00   0.0000E+00   0.0000E+00   0.0000E+00   0.0000E+00
+0OMEGA CONSTRAINED TO BE THIS INITIAL ESTIMATE
 0INITIAL ESTIMATE OF SIGMA:
  0.1000E+01
 0SIGMA CONSTRAINED TO BE THIS INITIAL ESTIMATE
@@ -326,61 +331,64 @@ Days until program expires : 159
  nm:format='s1pe12.5' nm:order='tsol' nm:knuthsumoff='0' nm:lntwopi='0' nm:priorc='0' nm:olntwopi='0' nm:ctype='0'
 />
 <nm:monitor>
-<nm:obj nm:iteration='0'>1.7329231204160000E+018</nm:obj>
-<nm:obj nm:iteration='2'>1.7329231204160000E+018</nm:obj>
+<nm:obj nm:iteration='0'>3.4753373480160005E+018</nm:obj>
+<nm:obj nm:iteration='3'>1.7329231204160008E+018</nm:obj>
 </nm:monitor>
-<nm:termination_status>134</nm:termination_status>
-<nm:termination_nfuncevals>67</nm:termination_nfuncevals>
-<nm:termination_sigdigits>0.0000000000000000</nm:termination_sigdigits>
+<nm:termination_status>132</nm:termination_status>
+<nm:termination_nfuncevals>38</nm:termination_nfuncevals>
+<nm:termination_sigdigits>-22.940121412941100</nm:termination_sigdigits>
 <nm:termination_information><![CDATA[
 0MINIMIZATION TERMINATED
- DUE TO ROUNDING ERRORS (ERROR=134)
- NO. OF FUNCTION EVALUATIONS USED:       67
+ DUE TO ZERO GRADIENT
+
+ NO. OF SIG. DIGITS IS EFFECTIVELY INFINITE
+ HOWEVER, IT IS ADVISABLE TO REGARD THESE RESULTS CAREFULLY BEFORE ACCEPTING THEM
+ NO. OF FUNCTION EVALUATIONS USED:       38
  NO. OF SIG. DIGITS UNREPORTABLE
 ]]></nm:termination_information>
 <nm:termination_txtmsg>
 <nm:val nm:name='1'>50</nm:val>
-<nm:val nm:name='2'>54</nm:val>
+<nm:val nm:name='2'>52</nm:val>
 <nm:val nm:name='3'>39</nm:val>
 </nm:termination_txtmsg>
 <nm:estimation_elapsed_time>0.01</nm:estimation_elapsed_time>
 <nm:final_objective_function_text>MINIMUM VALUE OF OBJECTIVE FUNCTION</nm:final_objective_function_text>
-<nm:final_objective_function>1.7329231204160000E+018</nm:final_objective_function>
+<nm:final_objective_function>1.7329231204160008E+018</nm:final_objective_function>
 <nm:theta>
 <nm:val nm:name='1'>100.00000000000000</nm:val>
 <nm:val nm:name='2'>700.00000000000000</nm:val>
 <nm:val nm:name='3'>70.000000000000000</nm:val>
 <nm:val nm:name='4'>499.99999999999994</nm:val>
 <nm:val nm:name='5'>10.000000000000000</nm:val>
-<nm:val nm:name='6'>1.0000000000000000</nm:val>
+<nm:val nm:name='6'>0.74081822068171777</nm:val>
 <nm:val nm:name='7'>1.0000000000000000E-004</nm:val>
 <nm:val nm:name='8'>0.20000000000000001</nm:val>
 </nm:theta>
 <nm:omega>
 <nm:row nm:rname='1'>
-<nm:col nm:cname='1'>0.25000000000000000</nm:col>
+<nm:col nm:cname='1'>0.0000000000000000</nm:col>
 </nm:row>
 <nm:row nm:rname='2'>
 <nm:col nm:cname='1'>0.0000000000000000</nm:col>
-<nm:col nm:cname='2'>0.25000000000000000</nm:col>
+<nm:col nm:cname='2'>0.0000000000000000</nm:col>
 </nm:row>
 <nm:row nm:rname='3'>
 <nm:col nm:cname='1'>0.0000000000000000</nm:col>
 <nm:col nm:cname='2'>0.0000000000000000</nm:col>
-<nm:col nm:cname='3'>0.25000000000000000</nm:col>
+<nm:col nm:cname='3'>0.0000000000000000</nm:col>
 </nm:row>
 <nm:row nm:rname='4'>
 <nm:col nm:cname='1'>0.0000000000000000</nm:col>
 <nm:col nm:cname='2'>0.0000000000000000</nm:col>
 <nm:col nm:cname='3'>0.0000000000000000</nm:col>
-<nm:col nm:cname='4'>0.25000000000000000</nm:col>
+<nm:col nm:cname='4'>0.0000000000000000</nm:col>
 </nm:row>
 <nm:row nm:rname='5'>
 <nm:col nm:cname='1'>0.0000000000000000</nm:col>
 <nm:col nm:cname='2'>0.0000000000000000</nm:col>
 <nm:col nm:cname='3'>0.0000000000000000</nm:col>
 <nm:col nm:cname='4'>0.0000000000000000</nm:col>
-<nm:col nm:cname='5'>0.25000000000000000</nm:col>
+<nm:col nm:cname='5'>0.0000000000000000</nm:col>
 </nm:row>
 <nm:row nm:rname='6'>
 <nm:col nm:cname='1'>0.0000000000000000</nm:col>
@@ -388,7 +396,7 @@ Days until program expires : 159
 <nm:col nm:cname='3'>0.0000000000000000</nm:col>
 <nm:col nm:cname='4'>0.0000000000000000</nm:col>
 <nm:col nm:cname='5'>0.0000000000000000</nm:col>
-<nm:col nm:cname='6'>0.25000000000000000</nm:col>
+<nm:col nm:cname='6'>0.0000000000000000</nm:col>
 </nm:row>
 </nm:omega>
 <nm:sigma>
@@ -398,29 +406,29 @@ Days until program expires : 159
 </nm:sigma>
 <nm:omegac>
 <nm:row nm:rname='1'>
-<nm:col nm:cname='1'>0.50000000000000000</nm:col>
+<nm:col nm:cname='1'>0.0000000000000000</nm:col>
 </nm:row>
 <nm:row nm:rname='2'>
 <nm:col nm:cname='1'>0.0000000000000000</nm:col>
-<nm:col nm:cname='2'>0.50000000000000000</nm:col>
+<nm:col nm:cname='2'>0.0000000000000000</nm:col>
 </nm:row>
 <nm:row nm:rname='3'>
 <nm:col nm:cname='1'>0.0000000000000000</nm:col>
 <nm:col nm:cname='2'>0.0000000000000000</nm:col>
-<nm:col nm:cname='3'>0.50000000000000000</nm:col>
+<nm:col nm:cname='3'>0.0000000000000000</nm:col>
 </nm:row>
 <nm:row nm:rname='4'>
 <nm:col nm:cname='1'>0.0000000000000000</nm:col>
 <nm:col nm:cname='2'>0.0000000000000000</nm:col>
 <nm:col nm:cname='3'>0.0000000000000000</nm:col>
-<nm:col nm:cname='4'>0.50000000000000000</nm:col>
+<nm:col nm:cname='4'>0.0000000000000000</nm:col>
 </nm:row>
 <nm:row nm:rname='5'>
 <nm:col nm:cname='1'>0.0000000000000000</nm:col>
 <nm:col nm:cname='2'>0.0000000000000000</nm:col>
 <nm:col nm:cname='3'>0.0000000000000000</nm:col>
 <nm:col nm:cname='4'>0.0000000000000000</nm:col>
-<nm:col nm:cname='5'>0.50000000000000000</nm:col>
+<nm:col nm:cname='5'>0.0000000000000000</nm:col>
 </nm:row>
 <nm:row nm:rname='6'>
 <nm:col nm:cname='1'>0.0000000000000000</nm:col>
@@ -428,7 +436,7 @@ Days until program expires : 159
 <nm:col nm:cname='3'>0.0000000000000000</nm:col>
 <nm:col nm:cname='4'>0.0000000000000000</nm:col>
 <nm:col nm:cname='5'>0.0000000000000000</nm:col>
-<nm:col nm:cname='6'>0.50000000000000000</nm:col>
+<nm:col nm:cname='6'>0.0000000000000000</nm:col>
 </nm:row>
 </nm:omegac>
 <nm:sigmac>
@@ -437,8 +445,12 @@ Days until program expires : 159
 </nm:row>
 </nm:sigmac>
 </nm:estimation>
+<nm:post_process_times>
+<nm:post_elapsed_time>0.02</nm:post_elapsed_time>
+<nm:finaloutput_elapsed_time>0.01</nm:finaloutput_elapsed_time>
+</nm:post_process_times>
 </nm:problem>
 </nm:nonmem>
-<nm:stop_datetime>2022-01-05T08:12:44.117</nm:stop_datetime>
-<nm:total_cputime>0.049</nm:total_cputime>
+<nm:stop_datetime>2022-01-05T08:27:03.974</nm:stop_datetime>
+<nm:total_cputime>0.038</nm:total_cputime>
 </nm:output>
