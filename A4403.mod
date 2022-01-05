@@ -30,8 +30,8 @@ $THETA
   (0,500) ;POPV3/F
   (0,10) ;POPKA
   (0,1) ;POPALAG1
-  10
-  .5
+  0.001 FIX
+  (0, 0.3, 1)
 
 $OMEGA
   .25 ;BSVCL/F
