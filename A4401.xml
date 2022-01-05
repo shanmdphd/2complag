@@ -5,7 +5,7 @@ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 xsi:schemaLocation="http://namespaces.oreilly.com/xmlnut/address output.xsd"
 xmlns:nm="http://namespaces.oreilly.com/xmlnut/address"
 >
-<nm:start_datetime>2022-01-05T08:44:12.863</nm:start_datetime>
+<nm:start_datetime>2022-01-05T08:45:22.067</nm:start_datetime>
 <nm:control_stream><![CDATA[
 $PROBLEM TWO COMPARTMENT ORAL
 
@@ -34,11 +34,11 @@ $ERROR
   Y = IPRED + W * EPS(1)
 
 $THETA
-  (0, 10, 30)
-  (0, 30, 100)
-  (0, 50, 300)
-  (0, 5, 20)
-  (0, 1.5, 5)
+  (0, 2.3 , 30)
+  (0, 2.2, 100)
+  (0, 2.4, 300)
+  (0, 2.7, 20)
+  (0, 2.13, 5)
   0.001 FIX
   (0, 0.3, 1)
 $OMEGA
@@ -121,11 +121,11 @@ Days until program expires : 159
 0DEFAULT SIGMA BOUNDARY TEST OMITTED:    NO
 0INITIAL ESTIMATE OF THETA:
  LOWER BOUND    INITIAL EST    UPPER BOUND
-  0.0000E+00     0.1000E+02     0.3000E+02
-  0.0000E+00     0.3000E+02     0.1000E+03
-  0.0000E+00     0.5000E+02     0.3000E+03
-  0.0000E+00     0.5000E+01     0.2000E+02
-  0.0000E+00     0.1500E+01     0.5000E+01
+  0.0000E+00     0.2300E+01     0.3000E+02
+  0.0000E+00     0.2200E+01     0.1000E+03
+  0.0000E+00     0.2400E+01     0.3000E+03
+  0.0000E+00     0.2700E+01     0.2000E+02
+  0.0000E+00     0.2130E+01     0.5000E+01
   0.1000E-02     0.1000E-02     0.1000E-02
   0.0000E+00     0.3000E+00     0.1000E+01
 0INITIAL ESTIMATE OF OMEGA:
@@ -265,11 +265,11 @@ Days until program expires : 159
 <nm:val nm:name='7'>0.0000000000000000</nm:val>
 </nm:theta_lb>
 <nm:theta_in>
-<nm:val nm:name='1'>10.000000000000000</nm:val>
-<nm:val nm:name='2'>30.000000000000000</nm:val>
-<nm:val nm:name='3'>50.000000000000000</nm:val>
-<nm:val nm:name='4'>5.0000000000000000</nm:val>
-<nm:val nm:name='5'>1.5000000000000000</nm:val>
+<nm:val nm:name='1'>2.2999999999999998</nm:val>
+<nm:val nm:name='2'>2.2000000000000002</nm:val>
+<nm:val nm:name='3'>2.3999999999999999</nm:val>
+<nm:val nm:name='4'>2.7000000000000002</nm:val>
+<nm:val nm:name='5'>2.1299999999999999</nm:val>
 <nm:val nm:name='6'>1.0000000000000000E-003</nm:val>
 <nm:val nm:name='7'>0.29999999999999999</nm:val>
 </nm:theta_in>
@@ -334,22 +334,22 @@ Days until program expires : 159
  nm:format='s1pe12.5' nm:order='tsol' nm:knuthsumoff='0' nm:lntwopi='0' nm:priorc='0' nm:olntwopi='0' nm:ctype='0'
 />
 <nm:monitor>
-<nm:obj nm:iteration='0'>1172.8980038046368</nm:obj>
-<nm:obj nm:iteration='5'>827.59743239505747</nm:obj>
-<nm:obj nm:iteration='10'>805.14381229033222</nm:obj>
-<nm:obj nm:iteration='15'>800.77209946566290</nm:obj>
-<nm:obj nm:iteration='20'>799.20972635914666</nm:obj>
-<nm:obj nm:iteration='25'>799.08027788131017</nm:obj>
-<nm:obj nm:iteration='30'>798.99746704587403</nm:obj>
-<nm:obj nm:iteration='31'>798.99746704587403</nm:obj>
+<nm:obj nm:iteration='0'>1876.5324190125755</nm:obj>
+<nm:obj nm:iteration='5'>944.71911934432910</nm:obj>
+<nm:obj nm:iteration='10'>830.10971772199571</nm:obj>
+<nm:obj nm:iteration='15'>805.95038384700206</nm:obj>
+<nm:obj nm:iteration='20'>802.21545353891611</nm:obj>
+<nm:obj nm:iteration='25'>799.14643467263625</nm:obj>
+<nm:obj nm:iteration='30'>798.99799031425709</nm:obj>
+<nm:obj nm:iteration='34'>798.99746342211267</nm:obj>
 </nm:monitor>
 <nm:termination_status>0</nm:termination_status>
-<nm:termination_nfuncevals>300</nm:termination_nfuncevals>
-<nm:termination_sigdigits>3.1271299006862652</nm:termination_sigdigits>
+<nm:termination_nfuncevals>348</nm:termination_nfuncevals>
+<nm:termination_sigdigits>3.5605979559970846</nm:termination_sigdigits>
 <nm:termination_information><![CDATA[
 0MINIMIZATION SUCCESSFUL
- NO. OF FUNCTION EVALUATIONS USED:      300
- NO. OF SIG. DIGITS IN FINAL EST.:  3.1
+ NO. OF FUNCTION EVALUATIONS USED:      348
+ NO. OF SIG. DIGITS IN FINAL EST.:  3.6
 0PARAMETER ESTIMATE IS NEAR ITS BOUNDARY
  THIS MUST BE ADDRESSED BEFORE THE COVARIANCE STEP CAN BE IMPLEMENTED
 ]]></nm:termination_information>
@@ -360,13 +360,13 @@ Days until program expires : 159
 </nm:termination_txtmsg>
 <nm:estimation_elapsed_time>0.04</nm:estimation_elapsed_time>
 <nm:final_objective_function_text>MINIMUM VALUE OF OBJECTIVE FUNCTION</nm:final_objective_function_text>
-<nm:final_objective_function>798.99746704587403</nm:final_objective_function>
+<nm:final_objective_function>798.99746342211267</nm:final_objective_function>
 <nm:theta>
-<nm:val nm:name='1'>23.294649446517049</nm:val>
-<nm:val nm:name='2'>22.272449142557473</nm:val>
-<nm:val nm:name='3'>2.4066285809987700</nm:val>
-<nm:val nm:name='4'>0.27895431899288220</nm:val>
-<nm:val nm:name='5'>2.1293538679057988</nm:val>
+<nm:val nm:name='1'>2.2536460019764371</nm:val>
+<nm:val nm:name='2'>2.1546501907001332</nm:val>
+<nm:val nm:name='3'>0.23292132732677612</nm:val>
+<nm:val nm:name='4'>2.7000000000000003E-002</nm:val>
+<nm:val nm:name='5'>2.1291093662188518</nm:val>
 <nm:val nm:name='6'>1.0000000000000000E-003</nm:val>
 <nm:val nm:name='7'>0.99299999999999999</nm:val>
 </nm:theta>
@@ -441,6 +441,6 @@ Days until program expires : 159
 </nm:post_process_times>
 </nm:problem>
 </nm:nonmem>
-<nm:stop_datetime>2022-01-05T08:44:12.934</nm:stop_datetime>
-<nm:total_cputime>0.070</nm:total_cputime>
+<nm:stop_datetime>2022-01-05T08:45:22.143</nm:stop_datetime>
+<nm:total_cputime>0.076</nm:total_cputime>
 </nm:output>
