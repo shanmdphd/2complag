@@ -24,22 +24,22 @@ $ERROR
   Y       = IPRED + W * EPS(1)
 
 $THETA
-  (0,100) ;POPCL/F
-  (0,700) ;POPV/F
+  (0,100);POPCL/F
+  (0,700);POPV/F
   (0,70) ;POPQ/F
-  (0,500) ;POPV3/F
+  (0,500);POPV3/F
   (0,10) ;POPKA
-  (0,1) ;POPALAG1
+  (0,1)  ;POPALAG1
   0.0001 FIX
-  0.5;  (0, 0.3, 1)
+  0.2
 
 $OMEGA
   .25 ;BSVCL/F
   .25 ;BSVV/F
-  0 FIX ;BSVQ/F
+  .25 ;BSVQ/F
   .25 ;BSVV3/F
-  .25 ;BSVKA
-  .25 ;BSVALAG1
+  0 FIX ;BSVKA
+  0 FIX ;BSVALAG1
 
 $SIGMA
   1 FIX ;ERRCV

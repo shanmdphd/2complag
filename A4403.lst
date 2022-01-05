@@ -1,4 +1,4 @@
-Wed Jan  5 07:18:19 UTC 2022
+Wed Jan  5 07:23:36 UTC 2022
 $PROBLEM TWO COMPARTMENT ORAL
 
 $DATA pk_oral2_30_90.csv IGNORE=#
@@ -25,22 +25,22 @@ $ERROR
   Y       = IPRED + W * EPS(1)
 
 $THETA
-  (0,100) ;POPCL/F
-  (0,700) ;POPV/F
+  (0,100);POPCL/F
+  (0,700);POPV/F
   (0,70) ;POPQ/F
-  (0,500) ;POPV3/F
+  (0,500);POPV3/F
   (0,10) ;POPKA
-  (0,1) ;POPALAG1
+  (0,1)  ;POPALAG1
   0.0001 FIX
-  0.5;  (0, 0.3, 1)
+  0.2
 
 $OMEGA
   .25 ;BSVCL/F
   .25 ;BSVV/F
-  0 FIX ;BSVQ/F
+  .25 ;BSVQ/F
   .25 ;BSVV3/F
-  .25 ;BSVKA
-  .25 ;BSVALAG1
+  0 FIX ;BSVKA
+  0 FIX ;BSVALAG1
 
 $SIGMA
   1 FIX ;ERRCV
@@ -116,21 +116,21 @@ Days until program expires : 159
   0.0000E+00     0.1000E+02     0.1000E+07
   0.0000E+00     0.1000E+01     0.1000E+07
   0.1000E-03     0.1000E-03     0.1000E-03
- -0.1000E+07     0.5000E+00     0.1000E+07
+ -0.1000E+07     0.2000E+00     0.1000E+07
 0INITIAL ESTIMATE OF OMEGA:
  BLOCK SET NO.   BLOCK                                                                    FIXED
         1                                                                                   NO
                   0.2500E+00
         2                                                                                   NO
                   0.2500E+00
-        3                                                                                  YES
-                  0.0000E+00
+        3                                                                                   NO
+                  0.2500E+00
         4                                                                                   NO
                   0.2500E+00
-        5                                                                                   NO
-                  0.2500E+00
-        6                                                                                   NO
-                  0.2500E+00
+        5                                                                                  YES
+                  0.0000E+00
+        6                                                                                  YES
+                  0.0000E+00
 0INITIAL ESTIMATE OF SIGMA:
  0.1000E+01
 0SIGMA CONSTRAINED TO BE THIS INITIAL ESTIMATE
@@ -289,58 +289,58 @@ Days until program expires : 159
  MONITORING OF SEARCH:
 
 
-0ITERATION NO.:    0    OBJECTIVE VALUE:  4.529541204160003E+17    NO. OF FUNC. EVALS.:   9
+0ITERATION NO.:    0    OBJECTIVE VALUE:  3.475337348016001E+18    NO. OF FUNC. EVALS.:   9
  CUMULATIVE NO. OF FUNC. EVALS.:        9
- NPARAMETR:  1.0000E+02  7.0000E+02  7.0000E+01  5.0000E+02  1.0000E+01  1.0000E+00  5.0000E-01  2.5000E-01  2.5000E-01  2.5000E-01
-             2.5000E-01  2.5000E-01
+ NPARAMETR:  1.0000E+02  7.0000E+02  7.0000E+01  5.0000E+02  1.0000E+01  1.0000E+00  2.0000E-01  2.5000E-01  2.5000E-01  2.5000E-01
+             2.5000E-01
  PARAMETER:  1.0000E-01  1.0000E-01  1.0000E-01  1.0000E-01  1.0000E-01  1.0000E-01  1.0000E-01  1.0000E-01  1.0000E-01  1.0000E-01
-             1.0000E-01  1.0000E-01
- GRADIENT:   0.0000E+00  0.0000E+00  0.0000E+00  0.0000E+00  0.0000E+00  0.0000E+00  0.0000E+00 -3.4528E+01 -6.9180E+00  2.6596E+00
-            -7.6848E-02 -1.2969E+00
+             1.0000E-01
+ GRADIENT:   0.0000E+00  0.0000E+00  0.0000E+00  0.0000E+00  0.0000E+00  0.0000E+00  0.0000E+00 -1.9554E+01  2.9975E+00  2.4510E+00
+            -2.3194E-01
 
-0ITERATION NO.:    4    OBJECTIVE VALUE:  7.307651041600053E+16    NO. OF FUNC. EVALS.: 172
- CUMULATIVE NO. OF FUNC. EVALS.:      181
- NPARAMETR:  1.0001E+02  7.0000E+02  6.9993E+01  5.0003E+02  1.0000E+01  9.9997E-01  5.0000E-01  2.5000E-01  2.5000E-01  2.5008E-01
-             2.5005E-01  2.5000E-01
- PARAMETER:  1.0005E-01  1.0000E-01  9.9900E-02  1.0005E-01  1.0000E-01  9.9866E-02  1.0000E-01  1.0000E-01  1.0000E-01  1.0005E-01
-             1.0000E-01  1.0000E-01
- GRADIENT:   0.0000E+00  0.0000E+00  0.0000E+00  0.0000E+00  0.0000E+00 -8.0000E+04  0.0000E+00  0.0000E+00  0.0000E+00 -6.2614E-01
-            -2.4699E-01  0.0000E+00
+0ITERATION NO.:    3    OBJECTIVE VALUE:  1.732923120416001E+18    NO. OF FUNC. EVALS.: 108
+ CUMULATIVE NO. OF FUNC. EVALS.:      117
+ NPARAMETR:  1.0000E+02  7.0000E+02  7.0000E+01  5.0000E+02  1.0000E+01  7.4082E-01  2.0000E-01  2.5000E-01  2.5005E-01  2.5005E-01
+             2.5000E-01
+ PARAMETER:  1.0000E-01  1.0000E-01  1.0000E-01  1.0000E-01  1.0000E-01 -2.0000E-01  1.0000E-01  1.0000E-01  1.0000E-01  1.0000E-01
+             1.0000E-01
+ GRADIENT:   0.0000E+00  0.0000E+00  0.0000E+00  0.0000E+00  0.0000E+00  0.0000E+00  0.0000E+00  0.0000E+00 -4.2610E-01 -1.1345E+00
+             0.0000E+00
 
  #TERM:
 0MINIMIZATION TERMINATED
  DUE TO ROUNDING ERRORS (ERROR=134)
- NO. OF FUNCTION EVALUATIONS USED:      181
+ NO. OF FUNCTION EVALUATIONS USED:      117
  NO. OF SIG. DIGITS UNREPORTABLE
 
  ETABAR IS THE ARITHMETIC MEAN OF THE ETA-ESTIMATES,
  AND THE P-VALUE IS GIVEN FOR THE NULL HYPOTHESIS THAT THE TRUE MEAN IS 0.
 
- ETABAR:         8.1565E-01 -3.9452E-01  0.0000E+00  6.3104E-02  3.8013E-02 -7.2128E-01
- SE:             3.3136E-01  1.7081E-01  0.0000E+00  9.4639E-02  4.1104E-02  1.3915E-01
+ ETABAR:         6.0394E-01 -2.3867E-01 -9.5578E-02 -2.6969E-01  0.0000E+00  0.0000E+00
+ SE:             3.4873E-01  1.4411E-01  9.4047E-02  1.5826E-01  0.0000E+00  0.0000E+00
  N:                       6           6           6           6           6           6
 
- P VAL.:         1.3834E-02  2.0906E-02  1.0000E+00  5.0491E-01  3.5507E-01  2.1824E-07
+ P VAL.:         8.3305E-02  9.7694E-02  3.0949E-01  8.8366E-02  1.0000E+00  1.0000E+00
 
- ETASHRINKSD(%)  1.0000E-10  8.3335E+00  0.0000E+00  4.9214E+01  7.7942E+01  2.5324E+01
- ETASHRINKVR(%)  1.0000E-10  1.5973E+01  0.0000E+00  7.4208E+01  9.5134E+01  4.4235E+01
- EBVSHRINKSD(%)  2.3636E+01  2.3115E+01  0.0000E+00  5.0661E+01  7.6971E+01  7.1531E+00
- EBVSHRINKVR(%)  4.1686E+01  4.0887E+01  0.0000E+00  7.5657E+01  9.4696E+01  1.3795E+01
- RELATIVEINF(%)  3.4474E+01  3.3277E+01  0.0000E+00  2.3503E+01  3.0042E+00  5.4004E+01
+ ETASHRINKSD(%)  1.0000E-10  2.2662E+01  4.9529E+01  1.5068E+01  0.0000E+00  0.0000E+00
+ ETASHRINKVR(%)  1.0000E-10  4.0188E+01  7.4527E+01  2.7865E+01  0.0000E+00  0.0000E+00
+ EBVSHRINKSD(%)  2.5265E+01  1.9529E+01  3.4723E+01  4.4359E+01  0.0000E+00  0.0000E+00
+ EBVSHRINKVR(%)  4.4147E+01  3.5244E+01  5.7390E+01  6.9041E+01  0.0000E+00  0.0000E+00
+ RELATIVEINF(%)  0.0000E+00  0.0000E+00  0.0000E+00  0.0000E+00  0.0000E+00  0.0000E+00
  EPSSHRINKSD(%)  1.0000E-10
  EPSSHRINKVR(%)  1.0000E-10
 
   
  TOTAL DATA POINTS NORMALLY DISTRIBUTED (N):           49
  N*LOG(2PI) CONSTANT TO OBJECTIVE FUNCTION:    90.055976254057924     
- OBJECTIVE FUNCTION VALUE WITHOUT CONSTANT:    73076510416000528.     
- OBJECTIVE FUNCTION VALUE WITH CONSTANT:       73076510416000624.     
+ OBJECTIVE FUNCTION VALUE WITHOUT CONSTANT:    1.7329231204160005E+018
+ OBJECTIVE FUNCTION VALUE WITH CONSTANT:       1.7329231204160005E+018
  REPORTED OBJECTIVE FUNCTION DOES NOT CONTAIN CONSTANT
   
- TOTAL EFFECTIVE ETAS (NIND*NETA):                            30
+ TOTAL EFFECTIVE ETAS (NIND*NETA):                            24
   
  #TERE:
- Elapsed estimation  time in seconds:     0.72
+ Elapsed estimation  time in seconds:     0.25
  Elapsed postprocess time in seconds:     0.02
 1
  
@@ -391,7 +391,7 @@ Days until program expires : 159
 
          TH 1      TH 2      TH 3      TH 4      TH 5      TH 6      TH 7      TH 8     
  
-         1.00E+02  7.00E+02  7.00E+01  5.00E+02  1.00E+01  1.00E+00  1.00E-04  5.00E-01
+         1.00E+02  7.00E+02  7.00E+01  5.00E+02  1.00E+01  7.41E-01  1.00E-04  2.00E-01
  
 
 
@@ -407,16 +407,16 @@ Days until program expires : 159
 +        0.00E+00  2.50E-01
  
  ETA3
-+        0.00E+00  0.00E+00  0.00E+00
++        0.00E+00  0.00E+00  2.50E-01
  
  ETA4
 +        0.00E+00  0.00E+00  0.00E+00  2.50E-01
  
  ETA5
-+        0.00E+00  0.00E+00  0.00E+00  0.00E+00  2.50E-01
++        0.00E+00  0.00E+00  0.00E+00  0.00E+00  0.00E+00
  
  ETA6
-+        0.00E+00  0.00E+00  0.00E+00  0.00E+00  0.00E+00  2.50E-01
++        0.00E+00  0.00E+00  0.00E+00  0.00E+00  0.00E+00  0.00E+00
  
 
 
@@ -443,16 +443,16 @@ Days until program expires : 159
 +        0.00E+00  5.00E-01
  
  ETA3
-+        0.00E+00  0.00E+00  0.00E+00
++        0.00E+00  0.00E+00  5.00E-01
  
  ETA4
 +        0.00E+00  0.00E+00  0.00E+00  5.00E-01
  
  ETA5
-+        0.00E+00  0.00E+00  0.00E+00  0.00E+00  5.00E-01
++        0.00E+00  0.00E+00  0.00E+00  0.00E+00  0.00E+00
  
  ETA6
-+        0.00E+00  0.00E+00  0.00E+00  0.00E+00  0.00E+00  5.00E-01
++        0.00E+00  0.00E+00  0.00E+00  0.00E+00  0.00E+00  0.00E+00
  
 
 
@@ -465,6 +465,6 @@ Days until program expires : 159
 +        1.00E+00
  
  Elapsed finaloutput time in seconds:     0.01
- #CPUT: Total CPU Time in Seconds,        0.758
+ #CPUT: Total CPU Time in Seconds,        0.284
 Stop Time:
-Wed Jan  5 07:18:21 UTC 2022
+Wed Jan  5 07:23:37 UTC 2022
