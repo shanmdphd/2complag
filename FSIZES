@@ -39,12 +39,12 @@ ISAMPLEMAX     0
 DIMTMP         0              
 DIMCNS         0              
 DIMNEW         0              
-PDT            4              
+PDT            7              
 LADD_MAX       0              
 MAXSIDL        0              
 NTT            8              
 NOMEG          6              
 NSIGM          1              
-PPDT           2              
+PPDT           8              
 PAST_SIZE      0              
 MAXNRDS        0              

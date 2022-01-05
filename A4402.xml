@@ -5,7 +5,7 @@ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 xsi:schemaLocation="http://namespaces.oreilly.com/xmlnut/address output.xsd"
 xmlns:nm="http://namespaces.oreilly.com/xmlnut/address"
 >
-<nm:start_datetime>2022-01-05T03:48:57.176</nm:start_datetime>
+<nm:start_datetime>2022-01-05T04:21:37.851</nm:start_datetime>
 <nm:control_stream><![CDATA[
 $PROBLEM TWO COMPARTMENT ORAL
 
@@ -57,8 +57,8 @@ $ESTIMATION METHOD=0 POSTHOC MAXEVAL=9999 PRINT=5
 
 $COVARIANCE PRINT=E
 
-$TABLE ID TIME IPRED IWRES DV
-       FILE=sdtab4402 NOPRINT ONEHEADER
+$TABLE ID TIME IPRED IWRES DV NOPRINT ONEHEADER FILE=sdtab4402
+$TABLE ID CL V2 Q V3 KA ALAG1 NOPRINT ONEHEADER FILE=patab4402
 
 ]]></nm:control_stream>
 <nm:nmtran><![CDATA[
@@ -104,7 +104,7 @@ Days until program expires : 159
 0LABELS FOR DATA ITEMS:
  ID TIME AMT DV MDV EVID
 0(NONBLANK) LABELS FOR PRED-DEFINED ITEMS:
- IPRED IWRES
+ CL V2 Q V3 KA ALAG1 IPRED IWRES
 0FORMAT FOR DATA:
  (5E6.0,1F2.0)
 
@@ -169,7 +169,7 @@ Days until program expires : 159
  FORCED POS. DEFINITE SETTING DURING PRECONDITIONING: (FPOSDEF):0
  SIMPLE POS. DEFINITE SETTING: (POSDEF):-1
 0TABLES STEP OMITTED:    NO
- NO. OF TABLES:           1
+ NO. OF TABLES:           2
  SEED NUMBER (SEED):    11456
  RANMETHOD:             3U
  MC SAMPLES (ESAMPLE):    300
@@ -187,6 +187,19 @@ Days until program expires : 159
  FIXED_EFFECT_ETAS:
 0USER-CHOSEN ITEMS:
  ID TIME IPRED IWRES
+0-- TABLE   2 --
+0RECORDS ONLY:    ALL
+04 COLUMNS APPENDED:    YES
+ PRINTED:                NO
+ HEADER:                YES
+ FILE TO BE FORWARDED:   NO
+ FORMAT:                S1PE11.4
+ IDFORMAT:
+ LFORMAT:
+ RFORMAT:
+ FIXED_EFFECT_ETAS:
+0USER-CHOSEN ITEMS:
+ ID CL V2 Q V3 KA ALAG1
 0WARNING: THE NUMBER OF PARAMETERS TO BE ESTIMATED
  EXCEEDS THE NUMBER OF INDIVIDUALS WITH DATA.
 0WARNING: FOR AN ASYMPTOTIC ESTIMATE OF THE VARIANCE-COVARIANCE MATRIX
@@ -243,9 +256,10 @@ Days until program expires : 159
  nm:cov_special='no' nm:cov_compressed='no' nm:cov_slow_gradient='noslow' nm:cov_siglocov='-1' nm:cov_siglcov='-1'
  nm:cov_tol='-1' nm:cov_atol='-1' nm:cov_nofcov='no' nm:cov_cholroff='0' nm:cov_knuthsumoff='-1' nm:cov_resume='no'
  nm:cov_sirsample='BLANK' nm:cov_thbnd='1' nm:cov_precond='0' nm:cov_preconds='tos' nm:cov_pfcond='0'
- nm:cov_pretype='0' nm:cov_fposdef='0' nm:cov_posdef='-1' nm:tab_omitted='no' nm:tab_number='1' nm:tab_seed='11456'
+ nm:cov_pretype='0' nm:cov_fposdef='0' nm:cov_posdef='-1' nm:tab_omitted='no' nm:tab_number='2' nm:tab_seed='11456'
  nm:tab_clockseed='11456' nm:tab_ranmethod='3u' nm:tab_esample='300' nm:tab_wres='eigenvalue'
- nm:tab_fixedetas_01='BLANK' nm:pred_advan='4' nm:pred_evid='6' nm:pred_time='2' nm:pred_amt='3'
+ nm:tab_fixedetas_01='BLANK' nm:tab_fixedetas_02='BLANK' nm:pred_advan='4' nm:pred_evid='6' nm:pred_time='2'
+ nm:pred_amt='3'
 />
 <nm:theta_lb>
 <nm:val nm:name='1'>0.0000000000000000</nm:val>
@@ -458,6 +472,6 @@ Days until program expires : 159
 </nm:post_process_times>
 </nm:problem>
 </nm:nonmem>
-<nm:stop_datetime>2022-01-05T03:48:57.270</nm:stop_datetime>
-<nm:total_cputime>0.095</nm:total_cputime>
+<nm:stop_datetime>2022-01-05T04:21:37.948</nm:stop_datetime>
+<nm:total_cputime>0.097</nm:total_cputime>
 </nm:output>
