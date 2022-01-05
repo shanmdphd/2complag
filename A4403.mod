@@ -32,12 +32,12 @@ $THETA
   0.5
 
 $OMEGA
-  .25 ;BSVCL/F
-  .25 ;BSVV/F
-  .25 ;BSVQ/F
-  .25 ;BSVV3/F
-  .25 ;BSVKA
-  .25 ;BSVALAG1
+  .25 ;CL
+  .25 ;V2
+  .25 ;Q
+  .25 ;V3
+  .25 ;KA
+  .25 ;ALAG1
 
 $SIGMA
   1 FIX ;ERRCV
