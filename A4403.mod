@@ -25,8 +25,8 @@ $THETA
   (0,500);V3
   (0,10) ;KA
   (0,1)  ;ALAG1
-  0 FIX
-  0.01 FIX
+  0.000001 FIX
+  0.25
 
 $OMEGA
   .25 ;CL
