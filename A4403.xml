@@ -5,7 +5,7 @@ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 xsi:schemaLocation="http://namespaces.oreilly.com/xmlnut/address output.xsd"
 xmlns:nm="http://namespaces.oreilly.com/xmlnut/address"
 >
-<nm:start_datetime>2022-01-05T07:25:03.390</nm:start_datetime>
+<nm:start_datetime>2022-01-05T07:26:36.089</nm:start_datetime>
 <nm:control_stream><![CDATA[
 $PROBLEM TWO COMPARTMENT ORAL
 
@@ -39,8 +39,8 @@ $THETA
   (0,500);POPV3/F
   (0,10) ;POPKA
   (0,1)  ;POPALAG1
-  0.0001
-  0.2
+  10
+  0.5
 
 $OMEGA
   .25 ;BSVCL/F
@@ -131,8 +131,8 @@ Days until program expires : 159
   0.0000E+00     0.5000E+03     0.1000E+07
   0.0000E+00     0.1000E+02     0.1000E+07
   0.0000E+00     0.1000E+01     0.1000E+07
- -0.1000E+07     0.1000E-03     0.1000E+07
- -0.1000E+07     0.2000E+00     0.1000E+07
+ -0.1000E+07     0.1000E+02     0.1000E+07
+ -0.1000E+07     0.5000E+00     0.1000E+07
 0INITIAL ESTIMATE OF OMEGA:
  BLOCK SET NO.   BLOCK                                                                    FIXED
         1                                                                                   NO
@@ -279,8 +279,8 @@ Days until program expires : 159
 <nm:val nm:name='4'>500.00000000000000</nm:val>
 <nm:val nm:name='5'>10.000000000000000</nm:val>
 <nm:val nm:name='6'>1.0000000000000000</nm:val>
-<nm:val nm:name='7'>1.0000000000000000E-004</nm:val>
-<nm:val nm:name='8'>0.20000000000000001</nm:val>
+<nm:val nm:name='7'>10.000000000000000</nm:val>
+<nm:val nm:name='8'>0.50000000000000000</nm:val>
 </nm:theta_in>
 <nm:theta_ub>
 <nm:val nm:name='1'>1000000.0000000000</nm:val>
@@ -348,55 +348,45 @@ Days until program expires : 159
  nm:priorc='0' nm:olntwopi='0' nm:ctype='0'
 />
 <nm:monitor>
-<nm:obj nm:iteration='0'>3.4753373480160005E+018</nm:obj>
-<nm:obj nm:iteration='10'>33527183710193476.</nm:obj>
+<nm:obj nm:iteration='0'>347534270.38465309</nm:obj>
+<nm:obj nm:iteration='10'>866.21312068969019</nm:obj>
+<nm:obj nm:iteration='20'>864.54954573423061</nm:obj>
+<nm:obj nm:iteration='30'>864.40768669604643</nm:obj>
+<nm:obj nm:iteration='35'>864.39545151693687</nm:obj>
 </nm:monitor>
-<nm:termination_status>136</nm:termination_status>
-<nm:termination_nfuncevals>234</nm:termination_nfuncevals>
-<nm:termination_sigdigits>2.9499999992549295</nm:termination_sigdigits>
+<nm:termination_status>134</nm:termination_status>
+<nm:termination_nfuncevals>541</nm:termination_nfuncevals>
+<nm:termination_sigdigits>1.6070782686320872</nm:termination_sigdigits>
 <nm:termination_information><![CDATA[
 0MINIMIZATION TERMINATED
- DUE TO PROXIMITY OF LAST ITERATION EST. TO A VALUE
- AT WHICH THE OBJ. FUNC. IS INFINITE (ERROR=136)
-0AT THE LAST COMPUTED INFINITE VALUE OF THE OBJ. FUNCT.:
-0PRED EXIT CODE = 1
-0INDIVIDUAL NO.       4   ID= 4.00000000000000E+00   (WITHIN-INDIVIDUAL) DATA REC NO.   3
- THETA=
-  1.00E+02   7.00E+02   7.00E+01   5.00E+02   1.00E+01   8.61E-01   7.19E-04   2.00E-01
- ETA=
-  1.19E-04  -1.98E-04   5.22E+01   7.92E-05   0.00E+00   0.00E+00
- A ROOT OF THE CHARACTERISTIC EQUATION IS ZERO BECAUSE
- K*K32 IS MUCH SMALLER THAN  (K+K23+K32)**2.
- PERHAPS K OR K32 IS VERY SMALL, OR K23 IS VERY LARGE.
-
- NO. OF FUNCTION EVALUATIONS USED:      234
+ DUE TO ROUNDING ERRORS (ERROR=134)
+ NO. OF FUNCTION EVALUATIONS USED:      541
  NO. OF SIG. DIGITS UNREPORTABLE
 0PARAMETER ESTIMATE IS NEAR ITS BOUNDARY
 ]]></nm:termination_information>
 <nm:termination_txtmsg>
 <nm:val nm:name='1'>50</nm:val>
-<nm:val nm:name='2'>56</nm:val>
-<nm:val nm:name='3'>43</nm:val>
-<nm:val nm:name='4'>39</nm:val>
-<nm:val nm:name='5'>40</nm:val>
-<nm:val nm:name='6'>49</nm:val>
+<nm:val nm:name='2'>54</nm:val>
+<nm:val nm:name='3'>39</nm:val>
+<nm:val nm:name='4'>40</nm:val>
+<nm:val nm:name='5'>49</nm:val>
 </nm:termination_txtmsg>
 <nm:etabar>
 <nm:row nm:rname='SUBPOP1'>
-<nm:col nm:cname='ETA1'>5.0095913257573060E-004</nm:col>
-<nm:col nm:cname='ETA2'>-6.2520283827057746E-004</nm:col>
-<nm:col nm:cname='ETA3'>4.8494827684004989</nm:col>
-<nm:col nm:cname='ETA4'>1.2424370569484770E-004</nm:col>
+<nm:col nm:cname='ETA1'>-1.6449642146433698E-005</nm:col>
+<nm:col nm:cname='ETA2'>0.34118523442312426</nm:col>
+<nm:col nm:cname='ETA3'>0.59242699686186240</nm:col>
+<nm:col nm:cname='ETA4'>0.13467348430472950</nm:col>
 <nm:col nm:cname='ETA5'>0.0000000000000000</nm:col>
 <nm:col nm:cname='ETA6'>0.0000000000000000</nm:col>
 </nm:row>
 </nm:etabar>
 <nm:etabarse>
 <nm:row nm:rname='SUBPOP1'>
-<nm:col nm:cname='ETA1'>4.3601831359912842E-004</nm:col>
-<nm:col nm:cname='ETA2'>5.3543064168950084E-004</nm:col>
-<nm:col nm:cname='ETA3'>2.8221069402463432</nm:col>
-<nm:col nm:cname='ETA4'>9.9660236726210863E-005</nm:col>
+<nm:col nm:cname='ETA1'>7.0244703512522337E-006</nm:col>
+<nm:col nm:cname='ETA2'>0.27913342148932757</nm:col>
+<nm:col nm:cname='ETA3'>1.6568911396461194</nm:col>
+<nm:col nm:cname='ETA4'>0.12153619362297390</nm:col>
 <nm:col nm:cname='ETA5'>0.0000000000000000</nm:col>
 <nm:col nm:cname='ETA6'>0.0000000000000000</nm:col>
 </nm:row>
@@ -413,50 +403,50 @@ Days until program expires : 159
 </nm:etabarn>
 <nm:etabarpval>
 <nm:row nm:rname='SUBPOP1'>
-<nm:col nm:cname='ETA1'>0.25058058979734588</nm:col>
-<nm:col nm:cname='ETA2'>0.24294262189886981</nm:col>
-<nm:col nm:cname='ETA3'>8.5725274984140939E-002</nm:col>
-<nm:col nm:cname='ETA4'>0.21251762874283558</nm:col>
+<nm:col nm:cname='ETA1'>1.9192877459722417E-002</nm:col>
+<nm:col nm:cname='ETA2'>0.22159371244539777</nm:col>
+<nm:col nm:cname='ETA3'>0.72067770303411283</nm:col>
+<nm:col nm:cname='ETA4'>0.26782145852700695</nm:col>
 <nm:col nm:cname='ETA5'>1.0000000000000000</nm:col>
 <nm:col nm:cname='ETA6'>1.0000000000000000</nm:col>
 </nm:row>
 </nm:etabarpval>
 <nm:etashrinksd>
 <nm:row nm:rname='SUBPOP1'>
-<nm:col nm:cname='ETA1'>76.600801872580675</nm:col>
-<nm:col nm:cname='ETA2'>71.265776510702636</nm:col>
-<nm:col nm:cname='ETA3'>100.00000000000000</nm:col>
-<nm:col nm:cname='ETA4'>94.651670464635316</nm:col>
+<nm:col nm:cname='ETA1'>99.623027362928042</nm:col>
+<nm:col nm:cname='ETA2'>14.526734845661238</nm:col>
+<nm:col nm:cname='ETA3'>73.408146790148635</nm:col>
+<nm:col nm:cname='ETA4'>59.127159507216831</nm:col>
 <nm:col nm:cname='ETA5'>0.0000000000000000</nm:col>
 <nm:col nm:cname='ETA6'>0.0000000000000000</nm:col>
 </nm:row>
 </nm:etashrinksd>
 <nm:etashrinkvr>
 <nm:row nm:rname='SUBPOP1'>
-<nm:col nm:cname='ETA1'>94.524775269937749</nm:col>
-<nm:col nm:cname='ETA2'>91.743444004671119</nm:col>
-<nm:col nm:cname='ETA3'>100.00000000000000</nm:col>
-<nm:col nm:cname='ETA4'>99.713953711811456</nm:col>
+<nm:col nm:cname='ETA1'>99.998578916308986</nm:col>
+<nm:col nm:cname='ETA2'>26.943209438560999</nm:col>
+<nm:col nm:cname='ETA3'>92.928733428657168</nm:col>
+<nm:col nm:cname='ETA4'>83.294109100515044</nm:col>
 <nm:col nm:cname='ETA5'>0.0000000000000000</nm:col>
 <nm:col nm:cname='ETA6'>0.0000000000000000</nm:col>
 </nm:row>
 </nm:etashrinkvr>
 <nm:ebvshrinksd>
 <nm:row nm:rname='SUBPOP1'>
-<nm:col nm:cname='EBV1'>95.693646513022173</nm:col>
-<nm:col nm:cname='EBV2'>95.053372873113346</nm:col>
-<nm:col nm:cname='EBV3'>0.0000000000000000</nm:col>
-<nm:col nm:cname='EBV4'>98.786842110226615</nm:col>
+<nm:col nm:cname='EBV1'>99.408336631478704</nm:col>
+<nm:col nm:cname='EBV2'>5.1928424481396789</nm:col>
+<nm:col nm:cname='EBV3'>61.903870106325854</nm:col>
+<nm:col nm:cname='EBV4'>61.375824316862506</nm:col>
 <nm:col nm:cname='EBV5'>0.0000000000000000</nm:col>
 <nm:col nm:cname='EBV6'>0.0000000000000000</nm:col>
 </nm:row>
 </nm:ebvshrinksd>
 <nm:ebvshrinkvr>
 <nm:row nm:rname='SUBPOP1'>
-<nm:col nm:cname='EBV1'>99.814553196451939</nm:col>
-<nm:col nm:cname='EBV2'>99.755308800675493</nm:col>
-<nm:col nm:cname='EBV3'>0.0000000000000000</nm:col>
-<nm:col nm:cname='EBV4'>99.985282479344804</nm:col>
+<nm:col nm:cname='EBV1'>99.996499344583498</nm:col>
+<nm:col nm:cname='EBV2'>10.116028769367338</nm:col>
+<nm:col nm:cname='EBV3'>85.486848871243069</nm:col>
+<nm:col nm:cname='EBV4'>85.081730527981307</nm:col>
 <nm:col nm:cname='EBV5'>0.0000000000000000</nm:col>
 <nm:col nm:cname='EBV6'>0.0000000000000000</nm:col>
 </nm:row>
@@ -465,7 +455,7 @@ Days until program expires : 159
 <nm:row nm:rname='SUBPOP1'>
 <nm:col nm:cname='REL1'>1.0000000000000000E-010</nm:col>
 <nm:col nm:cname='REL2'>1.0000000000000000E-010</nm:col>
-<nm:col nm:cname='REL3'>0.0000000000000000</nm:col>
+<nm:col nm:cname='REL3'>1.0000000000000000E-010</nm:col>
 <nm:col nm:cname='REL4'>1.0000000000000000E-010</nm:col>
 <nm:col nm:cname='REL5'>0.0000000000000000</nm:col>
 <nm:col nm:cname='REL6'>0.0000000000000000</nm:col>
@@ -473,26 +463,26 @@ Days until program expires : 159
 </nm:relativeinf>
 <nm:epsshrinksd>
 <nm:row nm:rname='SUBPOP1'>
-<nm:col nm:cname='EPS1'>1.0000000000000000E-010</nm:col>
+<nm:col nm:cname='EPS1'>7.1543942387891191</nm:col>
 </nm:row>
 </nm:epsshrinksd>
 <nm:epsshrinkvr>
 <nm:row nm:rname='SUBPOP1'>
-<nm:col nm:cname='EPS1'>1.0000000000000000E-010</nm:col>
+<nm:col nm:cname='EPS1'>13.796934908338054</nm:col>
 </nm:row>
 </nm:epsshrinkvr>
-<nm:estimation_elapsed_time>0.19</nm:estimation_elapsed_time>
+<nm:estimation_elapsed_time>1.32</nm:estimation_elapsed_time>
 <nm:final_objective_function_text>MINIMUM VALUE OF OBJECTIVE FUNCTION</nm:final_objective_function_text>
-<nm:final_objective_function>33527183710193476.</nm:final_objective_function>
+<nm:final_objective_function>864.39545151693687</nm:final_objective_function>
 <nm:theta>
-<nm:val nm:name='1'>100.00000000000000</nm:val>
-<nm:val nm:name='2'>700.00000000000000</nm:val>
-<nm:val nm:name='3'>70.000000000000000</nm:val>
-<nm:val nm:name='4'>499.99999999999994</nm:val>
-<nm:val nm:name='5'>10.000000000000000</nm:val>
-<nm:val nm:name='6'>0.86070797642505781</nm:val>
-<nm:val nm:name='7'>7.1893745666325463E-004</nm:val>
-<nm:val nm:name='8'>0.20000000000000001</nm:val>
+<nm:val nm:name='1'>1837.6476908846503</nm:val>
+<nm:val nm:name='2'>43.306518753197807</nm:val>
+<nm:val nm:name='3'>17.331118829534674</nm:val>
+<nm:val nm:name='4'>910.00016833478708</nm:val>
+<nm:val nm:name='5'>0.85871565554978635</nm:val>
+<nm:val nm:name='6'>1.0000000000000000E-002</nm:val>
+<nm:val nm:name='7'>69.534174241326212</nm:val>
+<nm:val nm:name='8'>-32.418169899476609</nm:val>
 </nm:theta>
 <nm:omega>
 <nm:row nm:rname='1'>
@@ -500,18 +490,18 @@ Days until program expires : 159
 </nm:row>
 <nm:row nm:rname='2'>
 <nm:col nm:cname='1'>0.0000000000000000</nm:col>
-<nm:col nm:cname='2'>2.5000000000000001E-005</nm:col>
+<nm:col nm:cname='2'>0.76788394074477928</nm:col>
 </nm:row>
 <nm:row nm:rname='3'>
 <nm:col nm:cname='1'>0.0000000000000000</nm:col>
 <nm:col nm:cname='2'>0.0000000000000000</nm:col>
-<nm:col nm:cname='3'>1.0316892665782809E+154</nm:col>
+<nm:col nm:cname='3'>279.52666174821809</nm:col>
 </nm:row>
 <nm:row nm:rname='4'>
 <nm:col nm:cname='1'>0.0000000000000000</nm:col>
 <nm:col nm:cname='2'>0.0000000000000000</nm:col>
 <nm:col nm:cname='3'>0.0000000000000000</nm:col>
-<nm:col nm:cname='4'>2.5000000000000001E-005</nm:col>
+<nm:col nm:cname='4'>0.63661096815781315</nm:col>
 </nm:row>
 <nm:row nm:rname='5'>
 <nm:col nm:cname='1'>0.0000000000000000</nm:col>
@@ -540,18 +530,18 @@ Days until program expires : 159
 </nm:row>
 <nm:row nm:rname='2'>
 <nm:col nm:cname='1'>0.0000000000000000</nm:col>
-<nm:col nm:cname='2'>5.0000000000000001E-003</nm:col>
+<nm:col nm:cname='2'>0.87628987255632440</nm:col>
 </nm:row>
 <nm:row nm:rname='3'>
 <nm:col nm:cname='1'>0.0000000000000000</nm:col>
 <nm:col nm:cname='2'>0.0000000000000000</nm:col>
-<nm:col nm:cname='3'>1.0157210574652279E+077</nm:col>
+<nm:col nm:cname='3'>16.719050862660179</nm:col>
 </nm:row>
 <nm:row nm:rname='4'>
 <nm:col nm:cname='1'>0.0000000000000000</nm:col>
 <nm:col nm:cname='2'>0.0000000000000000</nm:col>
 <nm:col nm:cname='3'>0.0000000000000000</nm:col>
-<nm:col nm:cname='4'>5.0000000000000001E-003</nm:col>
+<nm:col nm:cname='4'>0.79787904356350481</nm:col>
 </nm:row>
 <nm:row nm:rname='5'>
 <nm:col nm:cname='1'>0.0000000000000000</nm:col>
@@ -581,6 +571,6 @@ Days until program expires : 159
 </nm:post_process_times>
 </nm:problem>
 </nm:nonmem>
-<nm:stop_datetime>2022-01-05T07:25:03.616</nm:stop_datetime>
-<nm:total_cputime>0.226</nm:total_cputime>
+<nm:stop_datetime>2022-01-05T07:26:37.450</nm:stop_datetime>
+<nm:total_cputime>1.361</nm:total_cputime>
 </nm:output>
