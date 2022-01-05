@@ -1,7 +1,6 @@
-Wed Jan  5 10:48:27 KST 2022
 $PROBLEM TWO COMPARTMENT ORAL
 
-$DATA pk_oral2.CSV IGNORE=#
+$DATA pk_oral2.csv IGNORE=#
 
 $INPUT ID TIME	AMT	DV	MDV	 
 
@@ -14,8 +13,8 @@ $PK
   V3    = THETA(4)*EXP(ETA(4)) ;V3/F
   KA    = THETA(5)*EXP(ETA(5)) ;Absorption rate constant
   ALAG1 = THETA(6)*EXP(ETA(6)) ;Lag time
-  S2    = V2/1000  ;Scaling factor
-  S3    = V3/1000  ;Scaling factor
+; S2    = V2/1000  ;Scaling factor
+; S3    = V3/1000  ;Scaling factor
 
 $ERROR
   IPRED   = F
@@ -51,11 +50,4 @@ $COVARIANCE PRINT=E
 
 $TABLE ID TIME IPRED IWRES DV
        FILE=sdtab4402 NOPRINT ONEHEADER
-
-
-NM-TRAN MESSAGES
-  
- WARNINGS AND ERRORS (IF ANY) FOR PROBLEM    1
-             
- (WARNING  2) NM-TRAN INFERS THAT THE DATA ARE POPULATION.
 
