@@ -5,7 +5,7 @@ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 xsi:schemaLocation="http://namespaces.oreilly.com/xmlnut/address output.xsd"
 xmlns:nm="http://namespaces.oreilly.com/xmlnut/address"
 >
-<nm:start_datetime>2022-01-05T08:29:52.160</nm:start_datetime>
+<nm:start_datetime>2022-01-05T08:30:20.769</nm:start_datetime>
 <nm:control_stream><![CDATA[
 $PROBLEM TWO COMPARTMENT ORAL
 $DATA pk_oral2_30_90.csv IGNORE=#
@@ -28,9 +28,9 @@ $ERROR
   Y       = IPRED + W * EPS(1)
 
 $THETA
-  (0,1);CL
+  (0,0.1);CL
   (0,7);V2
-  (0,7) ;Q
+  (0,0.1) ;Q
   (0,5);V3
   (0,1) ;KA
   (0,1)  ;ALAG1
@@ -118,9 +118,9 @@ Days until program expires : 159
 0DEFAULT SIGMA BOUNDARY TEST OMITTED:    NO
 0INITIAL ESTIMATE OF THETA:
  LOWER BOUND    INITIAL EST    UPPER BOUND
-  0.0000E+00     0.1000E+01     0.1000E+07
+  0.0000E+00     0.1000E+00     0.1000E+07
   0.0000E+00     0.7000E+01     0.1000E+07
-  0.0000E+00     0.7000E+01     0.1000E+07
+  0.0000E+00     0.1000E+00     0.1000E+07
   0.0000E+00     0.5000E+01     0.1000E+07
   0.0000E+00     0.1000E+01     0.1000E+07
   0.0000E+00     0.1000E+01     0.1000E+07
@@ -260,9 +260,9 @@ Days until program expires : 159
 <nm:val nm:name='8'>-1000000.0000000000</nm:val>
 </nm:theta_lb>
 <nm:theta_in>
-<nm:val nm:name='1'>1.0000000000000000</nm:val>
+<nm:val nm:name='1'>0.10000000000000001</nm:val>
 <nm:val nm:name='2'>7.0000000000000000</nm:val>
-<nm:val nm:name='3'>7.0000000000000000</nm:val>
+<nm:val nm:name='3'>0.10000000000000001</nm:val>
 <nm:val nm:name='4'>5.0000000000000000</nm:val>
 <nm:val nm:name='5'>1.0000000000000000</nm:val>
 <nm:val nm:name='6'>1.0000000000000000</nm:val>
@@ -331,20 +331,22 @@ Days until program expires : 159
  nm:format='s1pe12.5' nm:order='tsol' nm:knuthsumoff='0' nm:lntwopi='0' nm:priorc='0' nm:olntwopi='0' nm:ctype='0'
 />
 <nm:monitor>
-<nm:obj nm:iteration='0'>347534825.41974437</nm:obj>
-<nm:obj nm:iteration='5'>3536952.9659685609</nm:obj>
+<nm:obj nm:iteration='0'>347534874.12474978</nm:obj>
+<nm:obj nm:iteration='5'>7006173.1297153132</nm:obj>
+<nm:obj nm:iteration='10'>6843678.5535941916</nm:obj>
+<nm:obj nm:iteration='15'>1046944.6538785754</nm:obj>
 </nm:monitor>
 <nm:termination_status>0</nm:termination_status>
 <nm:termination_nfuncevals>-19</nm:termination_nfuncevals>
-<nm:termination_sigdigits>38.595503943085490</nm:termination_sigdigits>
+<nm:termination_sigdigits>9.9640678502092879</nm:termination_sigdigits>
 <nm:termination_information><![CDATA[
 ]]></nm:termination_information>
 <nm:termination_txtmsg>
 </nm:termination_txtmsg>
-<nm:estimation_elapsed_time>0.01</nm:estimation_elapsed_time>
+<nm:estimation_elapsed_time>0.02</nm:estimation_elapsed_time>
 </nm:estimation>
 </nm:problem>
 </nm:nonmem>
-<nm:stop_datetime>2022-01-05T08:29:52.181</nm:stop_datetime>
-<nm:total_cputime>0.020</nm:total_cputime>
+<nm:stop_datetime>2022-01-05T08:30:20.801</nm:stop_datetime>
+<nm:total_cputime>0.032</nm:total_cputime>
 </nm:output>
