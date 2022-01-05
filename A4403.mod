@@ -25,16 +25,16 @@ $THETA
   (0,500);V3
   (0,10) ;KA
   (0,1)  ;ALAG1
-  0.000001 FIX
-  0.25
+  0.001 FIX
+  0.2
 
 $OMEGA
   .25 ;CL
   .25 ;V2
-  1 ;Q
+  1 FIX ;Q
   .25 ;V3
-  .25 ;KA
-  .25 ;ALAG1
+  .25 FIX ;KA
+  .25 FIX ;ALAG1
 
 $SIGMA
   1 FIX ;ERRCV
