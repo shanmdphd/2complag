@@ -36,8 +36,8 @@ $OMEGA
   .25 ;V2
   .25 ;Q
   .25 ;V3
-  .25 ;KA
-  .25 ;ALAG1
+  0 FIX ;KA
+  0 FIX ;ALAG1
 
 $SIGMA
   1 FIX ;ERRCV
