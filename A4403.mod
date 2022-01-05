@@ -13,12 +13,10 @@ $PK
   V3    = THETA(4)*EXP(ETA(4)) ;V3/F
   KA    = THETA(5)*EXP(ETA(5)) ;Absorption rate constant
   ALAG1 = THETA(6)*EXP(ETA(6)) ;Lag time
-; S2    = V2/1000  ;Scaling factor
-; S3    = V3/1000  ;Scaling factor
 
 $ERROR
   IPRED   = F
-  W       = SQRT(THETA(7)**2 + THETA(8)**2 * F**2); SIGMA 1 FIX (additive plus proportional error model)
+  W       = SQRT(THETA(7)**2 + THETA(8)**2 * IPRED**2); additive plus proportional error model
   IRES    = DV - IPRED
   IWRES   = IRES / W
   Y       = IPRED + W * EPS(1)
@@ -38,8 +36,8 @@ $OMEGA
   .25 ;BSVV/F
   .25 ;BSVQ/F
   .25 ;BSVV3/F
-  0 FIX ;BSVKA
-  0 FIX ;BSVALAG1
+  .25 ;BSVKA
+  .25 ;BSVALAG1
 
 $SIGMA
   1 FIX ;ERRCV
