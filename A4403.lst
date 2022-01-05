@@ -1,4 +1,4 @@
-Wed Jan  5 08:09:24 UTC 2022
+Wed Jan  5 08:12:43 UTC 2022
 $PROBLEM TWO COMPARTMENT ORAL
 $DATA pk_oral2_30_90.csv IGNORE=#
 $INPUT ID TIME AMT DV MDV  
@@ -40,8 +40,8 @@ $OMEGA
 $SIGMA
   1 FIX ;ERRCV
  
-;$ESTIMATION METHOD=1 POSTHOC MAXEVAL=9999 PRINT=5 
-$ESTIMATION NOABORT MAXEVAL=9999 METHOD=1 INTER PRINT=10 SIGDIGITS=3
+$ESTIMATION METHOD=0 POSTHOC MAXEVAL=9999 PRINT=5 
+;$ESTIMATION NOABORT MAXEVAL=9999 METHOD=1 INTER PRINT=10 SIGDIGITS=3
 
 $COVARIANCE PRINT=E
 
@@ -216,21 +216,18 @@ Days until program expires : 159
 
 
  #TBLN:      1
- #METH: First Order Conditional Estimation with Interaction
+ #METH: First Order
 
  ESTIMATION STEP OMITTED:                 NO
  ANALYSIS TYPE:                           POPULATION
  NUMBER OF SADDLE POINT RESET ITERATIONS:      0
  GRADIENT METHOD USED:               NOSLOW
- CONDITIONAL ESTIMATES USED:              YES
- CENTERED ETA:                            NO
- EPS-ETA INTERACTION:                     YES
- LAPLACIAN OBJ. FUNC.:                    NO
+ EPS-ETA INTERACTION:                     NO
+ POP. ETAS OBTAINED POST HOC:             YES
  NO. OF FUNCT. EVALS. ALLOWED:            9999
  NO. OF SIG. FIGURES REQUIRED:            3
  INTERMEDIATE PRINTOUT:                   YES
  ESTIMATE OUTPUT TO MSF:                  NO
- ABORT WITH PRED EXIT CODE 1:             NO
  IND. OBJ. FUNC. VALUES SORTED:           NO
  NUMERICAL DERIVATIVE
        FILE REQUEST (NUMDER):               NONE
@@ -261,69 +258,51 @@ Days until program expires : 159
 
 
  THE FOLLOWING LABELS ARE EQUIVALENT
- PRED=PREDI
- RES=RESI
- WRES=WRESI
- IWRS=IWRESI
- IPRD=IPREDI
- IRS=IRESI
+ PRED=NPRED
+ RES=NRES
+ WRES=NWRES
+ IWRS=NIWRES
+ IPRD=NIPRED
+ IRS=NIRES
 
  MONITORING OF SEARCH:
 
 
-0ITERATION NO.:    0    OBJECTIVE VALUE:  1.732923120416001E+18    NO. OF FUNC. EVALS.:   9
+0ITERATION NO.:    0    OBJECTIVE VALUE:  1.732923120416000E+18    NO. OF FUNC. EVALS.:   9
  CUMULATIVE NO. OF FUNC. EVALS.:        9
  NPARAMETR:  1.0000E+02  7.0000E+02  7.0000E+01  5.0000E+02  1.0000E+01  1.0000E+00  2.0000E-01  2.5000E-01  2.5000E-01  2.5000E-01
              2.5000E-01  2.5000E-01  2.5000E-01
  PARAMETER:  1.0000E-01  1.0000E-01  1.0000E-01  1.0000E-01  1.0000E-01  1.0000E-01  1.0000E-01  1.0000E-01  1.0000E-01  1.0000E-01
              1.0000E-01  1.0000E-01  1.0000E-01
- GRADIENT:   0.0000E+00  0.0000E+00  0.0000E+00  0.0000E+00  0.0000E+00  0.0000E+00  0.0000E+00 -4.2959E+01 -7.1707E+00  3.6416E+00
-            -3.0510E+00 -6.9710E-01  4.6194E+00
+ GRADIENT:   0.0000E+00  0.0000E+00  7.6800E+06  0.0000E+00  0.0000E+00  1.7424E+22  0.0000E+00  4.2156E+00 -1.8829E+01 -1.6769E+01
+             6.5098E-01 -4.2624E-01  1.1590E+01
 
-0ITERATION NO.:    5    OBJECTIVE VALUE:  7.307651041600080E+16    NO. OF FUNC. EVALS.: 191
- CUMULATIVE NO. OF FUNC. EVALS.:      200
- NPARAMETR:  1.0001E+02  7.0000E+02  7.0000E+01  5.0003E+02  1.0000E+01  9.9985E-01  2.0000E-01  8.3003E-01  3.0383E-01  2.5003E-01
-             2.9343E-01  2.7786E-01  2.5003E-01
- PARAMETER:  1.0005E-01  1.0000E-01  1.0000E-01  1.0005E-01  1.0000E-01  9.9850E-02  1.0000E-01  7.0000E-01  1.9730E-01  1.0006E-01
-             1.8009E-01  1.5283E-01  1.0006E-01
- GRADIENT:   0.0000E+00  0.0000E+00  0.0000E+00  0.0000E+00  0.0000E+00  0.0000E+00  0.0000E+00  0.0000E+00 -4.4080E-01  0.0000E+00
-             0.0000E+00  0.0000E+00  0.0000E+00
+0ITERATION NO.:    2    OBJECTIVE VALUE:  1.732923120416000E+18    NO. OF FUNC. EVALS.:  58
+ CUMULATIVE NO. OF FUNC. EVALS.:       67
+ NPARAMETR:  1.0001E+02  7.0007E+02  6.9993E+01  5.0005E+02  1.0000E+01  9.9990E-01  2.0000E-01  2.5005E-01  2.5000E-01  2.5000E-01
+             2.5005E-01  2.5000E-01  2.5005E-01
+ PARAMETER:  1.0000E-01  1.0000E-01  1.0000E-01  1.0000E-01  1.0000E-01  1.0000E-01  1.0000E-01  1.0000E-01  1.0000E-01  1.0000E-01
+             1.0000E-01  1.0000E-01  1.0000E-01
+ GRADIENT:  -1.2800E+06 -1.2800E+06  2.5600E+06 -1.2800E+06  0.0000E+00  8.7121E+21  0.0000E+00 -2.1081E+00  0.0000E+00  0.0000E+00
+            -3.2554E-01  0.0000E+00 -5.7952E+00
 
  #TERM:
 0MINIMIZATION TERMINATED
  DUE TO ROUNDING ERRORS (ERROR=134)
- NO. OF FUNCTION EVALUATIONS USED:      200
+ NO. OF FUNCTION EVALUATIONS USED:       67
  NO. OF SIG. DIGITS UNREPORTABLE
-
- ETABAR IS THE ARITHMETIC MEAN OF THE ETA-ESTIMATES,
- AND THE P-VALUE IS GIVEN FOR THE NULL HYPOTHESIS THAT THE TRUE MEAN IS 0.
-
- ETABAR:         1.0501E+00 -6.4407E-02 -2.5048E-01 -1.5058E-02  2.3590E-01 -7.6979E-01
- SE:             4.2269E-01  1.2630E-01  2.7881E-01  2.1506E-01  1.3252E-01  1.5606E-01
- N:                       6           6           6           6           6           6
-
- P VAL.:         1.2977E-02  6.1007E-01  3.6898E-01  9.4418E-01  7.5055E-02  8.1204E-07
-
- ETASHRINKSD(%)  1.0000E-10  3.8507E+01  1.0000E-10  1.0000E-10  3.2542E+01  1.6256E+01
- ETASHRINKVR(%)  1.0000E-10  6.2186E+01  1.0000E-10  1.0000E-10  5.4494E+01  2.9869E+01
- EBVSHRINKSD(%)  1.1616E+01  2.8532E+01  3.4250E+01  4.5673E+01  6.9501E+01  1.2358E+01
- EBVSHRINKVR(%)  2.1883E+01  4.8924E+01  5.6769E+01  7.0485E+01  9.0698E+01  2.3189E+01
- RELATIVEINF(%)  0.0000E+00  0.0000E+00  0.0000E+00  0.0000E+00  7.2803E+00  6.2444E+01
- EPSSHRINKSD(%)  1.0000E-10
- EPSSHRINKVR(%)  1.0000E-10
-
   
  TOTAL DATA POINTS NORMALLY DISTRIBUTED (N):           49
  N*LOG(2PI) CONSTANT TO OBJECTIVE FUNCTION:    90.055976254057924     
- OBJECTIVE FUNCTION VALUE WITHOUT CONSTANT:    73076510416000800.     
- OBJECTIVE FUNCTION VALUE WITH CONSTANT:       73076510416000896.     
+ OBJECTIVE FUNCTION VALUE WITHOUT CONSTANT:    1.7329231204160000E+018
+ OBJECTIVE FUNCTION VALUE WITH CONSTANT:       1.7329231204160000E+018
  REPORTED OBJECTIVE FUNCTION DOES NOT CONTAIN CONSTANT
   
  TOTAL EFFECTIVE ETAS (NIND*NETA):                            36
   
  #TERE:
- Elapsed estimation  time in seconds:     1.00
- Elapsed postprocess time in seconds:     0.02
+ Elapsed estimation  time in seconds:     0.01
+0HESSIAN OF POSTERIOR DENSITY IS NON-POSITIVE-DEFINITE DURING SEARCH
 1
  
  
@@ -347,7 +326,7 @@ Days until program expires : 159
  
  ************************************************************************************************************************
  ********************                                                                                ********************
- ********************               FIRST ORDER CONDITIONAL ESTIMATION WITH INTERACTION              ********************
+ ********************                                   FIRST ORDER                                  ********************
  #OBJT:**************                       MINIMUM VALUE OF OBJECTIVE FUNCTION                      ********************
  ********************                                                                                ********************
  ************************************************************************************************************************
@@ -361,7 +340,7 @@ Days until program expires : 159
 1
  ************************************************************************************************************************
  ********************                                                                                ********************
- ********************               FIRST ORDER CONDITIONAL ESTIMATION WITH INTERACTION              ********************
+ ********************                                   FIRST ORDER                                  ********************
  ********************                             FINAL PARAMETER ESTIMATE                           ********************
  ********************                                                                                ********************
  ************************************************************************************************************************
@@ -383,19 +362,19 @@ Days until program expires : 159
          ETA1      ETA2      ETA3      ETA4      ETA5      ETA6     
  
  ETA1
-+        8.30E-01
++        2.50E-01
  
  ETA2
-+        0.00E+00  3.04E-01
++        0.00E+00  2.50E-01
  
  ETA3
 +        0.00E+00  0.00E+00  2.50E-01
  
  ETA4
-+        0.00E+00  0.00E+00  0.00E+00  2.93E-01
++        0.00E+00  0.00E+00  0.00E+00  2.50E-01
  
  ETA5
-+        0.00E+00  0.00E+00  0.00E+00  0.00E+00  2.78E-01
++        0.00E+00  0.00E+00  0.00E+00  0.00E+00  2.50E-01
  
  ETA6
 +        0.00E+00  0.00E+00  0.00E+00  0.00E+00  0.00E+00  2.50E-01
@@ -419,19 +398,19 @@ Days until program expires : 159
          ETA1      ETA2      ETA3      ETA4      ETA5      ETA6     
  
  ETA1
-+        9.11E-01
++        5.00E-01
  
  ETA2
-+        0.00E+00  5.51E-01
++        0.00E+00  5.00E-01
  
  ETA3
 +        0.00E+00  0.00E+00  5.00E-01
  
  ETA4
-+        0.00E+00  0.00E+00  0.00E+00  5.42E-01
++        0.00E+00  0.00E+00  0.00E+00  5.00E-01
  
  ETA5
-+        0.00E+00  0.00E+00  0.00E+00  0.00E+00  5.27E-01
++        0.00E+00  0.00E+00  0.00E+00  0.00E+00  5.00E-01
  
  ETA6
 +        0.00E+00  0.00E+00  0.00E+00  0.00E+00  0.00E+00  5.00E-01
@@ -446,7 +425,6 @@ Days until program expires : 159
  EPS1
 +        1.00E+00
  
- Elapsed finaloutput time in seconds:     0.01
- #CPUT: Total CPU Time in Seconds,        1.042
+ #CPUT: Total CPU Time in Seconds,        0.049
 Stop Time:
-Wed Jan  5 08:09:26 UTC 2022
+Wed Jan  5 08:12:44 UTC 2022
