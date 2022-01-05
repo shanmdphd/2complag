@@ -32,12 +32,16 @@ $THETA
   (0, 2.13, 5)
   0.001 FIX
   (0, 0.3, 1)
+
 $OMEGA
-  0.04
-  0.04
+  0 FIX
+$OMEGA BLOCK(2)
+0.16
+0.01 0.25
+$OMEGA
   0 FIX
   0 FIX
-  0 FIX
+
 $SIGMA
   1 FIX
 
