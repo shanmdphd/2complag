@@ -1,4 +1,4 @@
-Wed Jan  5 08:54:32 UTC 2022
+Wed Jan  5 08:56:25 UTC 2022
 $PROBLEM TWO COMPARTMENT ORAL
 
 $DATA pk_oral2_30_90.csv IGNORE=#
@@ -53,7 +53,7 @@ $ESTIMATION NOABORT MAXEVAL=9999 METHOD=1 INTER PRINT=10 SIGDIGITS=3
 $COVARIANCE PRINT=E
 
 $TABLE ID TIME IPRED IWRES DV NOPRINT ONEHEADER FILE=sdtab4401
-$TABLE ID CL V2 Q V3 KA NOPRINT ONEHEADER FILE=patab4401 NOAPPEND
+$TABLE ID CL V2 V3 Q KA NOPRINT ONEHEADER FILE=patab4401 NOAPPEND
 
 
 NM-TRAN MESSAGES
@@ -181,7 +181,7 @@ Days until program expires : 159
  RFORMAT:
  FIXED_EFFECT_ETAS:
 0USER-CHOSEN ITEMS:
- ID CL V2 Q V3 KA
+ ID CL V2 V3 Q KA
 0WARNING: THE NUMBER OF PARAMETERS TO BE ESTIMATED
  EXCEEDS THE NUMBER OF INDIVIDUALS WITH DATA.
 0WARNING: FOR AN ASYMPTOTIC ESTIMATE OF THE VARIANCE-COVARIANCE MATRIX
@@ -374,7 +374,7 @@ Days until program expires : 159
  TOTAL EFFECTIVE ETAS (NIND*NETA):                            18
   
  #TERE:
- Elapsed estimation  time in seconds:     0.71
+ Elapsed estimation  time in seconds:     0.70
  Elapsed postprocess time in seconds:     0.02
 1
  
@@ -493,6 +493,6 @@ Days until program expires : 159
 +        1.00E+00
  
  Elapsed finaloutput time in seconds:     0.00
- #CPUT: Total CPU Time in Seconds,        0.741
+ #CPUT: Total CPU Time in Seconds,        0.736
 Stop Time:
-Wed Jan  5 08:54:34 UTC 2022
+Wed Jan  5 08:56:27 UTC 2022

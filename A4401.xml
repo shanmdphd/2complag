@@ -5,7 +5,7 @@ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 xsi:schemaLocation="http://namespaces.oreilly.com/xmlnut/address output.xsd"
 xmlns:nm="http://namespaces.oreilly.com/xmlnut/address"
 >
-<nm:start_datetime>2022-01-05T08:54:33.584</nm:start_datetime>
+<nm:start_datetime>2022-01-05T08:56:26.772</nm:start_datetime>
 <nm:control_stream><![CDATA[
 $PROBLEM TWO COMPARTMENT ORAL
 
@@ -61,7 +61,7 @@ $ESTIMATION NOABORT MAXEVAL=9999 METHOD=1 INTER PRINT=10 SIGDIGITS=3
 $COVARIANCE PRINT=E
 
 $TABLE ID TIME IPRED IWRES DV NOPRINT ONEHEADER FILE=sdtab4401
-$TABLE ID CL V2 Q V3 KA NOPRINT ONEHEADER FILE=patab4401 NOAPPEND
+$TABLE ID CL V2 V3 Q KA NOPRINT ONEHEADER FILE=patab4401 NOAPPEND
 
 ]]></nm:control_stream>
 <nm:nmtran><![CDATA[
@@ -197,7 +197,7 @@ Days until program expires : 159
  RFORMAT:
  FIXED_EFFECT_ETAS:
 0USER-CHOSEN ITEMS:
- ID CL V2 Q V3 KA
+ ID CL V2 V3 Q KA
 0WARNING: THE NUMBER OF PARAMETERS TO BE ESTIMATED
  EXCEEDS THE NUMBER OF INDIVIDUALS WITH DATA.
 0WARNING: FOR AN ASYMPTOTIC ESTIMATE OF THE VARIANCE-COVARIANCE MATRIX
@@ -456,7 +456,7 @@ Days until program expires : 159
 <nm:col nm:cname='EPS1'>1.0000000000000000E-010</nm:col>
 </nm:row>
 </nm:epsshrinkvr>
-<nm:estimation_elapsed_time>0.71</nm:estimation_elapsed_time>
+<nm:estimation_elapsed_time>0.70</nm:estimation_elapsed_time>
 <nm:final_objective_function_text>MINIMUM VALUE OF OBJECTIVE FUNCTION</nm:final_objective_function_text>
 <nm:final_objective_function>802.21956429541763</nm:final_objective_function>
 <nm:theta>
@@ -539,6 +539,6 @@ Days until program expires : 159
 </nm:post_process_times>
 </nm:problem>
 </nm:nonmem>
-<nm:stop_datetime>2022-01-05T08:54:34.324</nm:stop_datetime>
-<nm:total_cputime>0.741</nm:total_cputime>
+<nm:stop_datetime>2022-01-05T08:56:27.508</nm:stop_datetime>
+<nm:total_cputime>0.736</nm:total_cputime>
 </nm:output>
