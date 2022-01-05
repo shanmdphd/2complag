@@ -1,9 +1,6 @@
 $PROBLEM TWO COMPARTMENT ORAL
-
 $DATA pk_oral2_30_90.csv IGNORE=#
-
 $INPUT ID TIME AMT DV MDV  
-
 $SUBROUTINE ADVAN4 TRANS4
 
 $PK
@@ -22,13 +19,13 @@ $ERROR
   Y       = IPRED + W * EPS(1)
 
 $THETA
-  (0,100);POPCL/F
-  (0,700);POPV/F
-  (0,70) ;POPQ/F
-  (0,500);POPV3/F
-  (0,10) ;POPKA
-  (0,1)  ;POPALAG1
-  0.0001 FIX
+  (0,100);CL
+  (0,700);V2
+  (0,70) ;Q
+  (0,500);V3
+  (0,10) ;KA
+  (0,1)  ;ALAG1
+  0.01 FIX
   0.5
 
 $OMEGA
