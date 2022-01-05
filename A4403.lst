@@ -1,4 +1,4 @@
-Wed Jan  5 07:57:34 UTC 2022
+Wed Jan  5 07:58:36 UTC 2022
 $PROBLEM TWO COMPARTMENT ORAL
 $DATA pk_oral2_30_90.csv IGNORE=#
 $INPUT ID TIME AMT DV MDV  
@@ -26,7 +26,7 @@ $THETA
   (0,500);V3
   (0,10) ;KA
   (0,1)  ;ALAG1
-  0 FIX
+  0.01 FIX
   0.01 FIX
 
 $OMEGA
@@ -104,7 +104,7 @@ Days until program expires : 159
   0.0000E+00     0.5000E+03     0.1000E+07
   0.0000E+00     0.1000E+02     0.1000E+07
   0.0000E+00     0.1000E+01     0.1000E+07
-  0.0000E+00     0.0000E+00     0.0000E+00
+  0.1000E-01     0.1000E-01     0.1000E-01
   0.1000E-01     0.1000E-01     0.1000E-01
 0INITIAL ESTIMATE OF OMEGA:
  0.2500E+00
@@ -270,24 +270,216 @@ Days until program expires : 159
 
  MONITORING OF SEARCH:
 
-0PROGRAM TERMINATED BY OBJ
- ERROR IN CELS   WITH INDIVIDUAL       1   ID= 1.00000000000000E+00
- SUM OF "SQUARED" WEIGHTED INDIVIDUAL RESIDUALS IS INFINITE
- MESSAGE ISSUED FROM ESTIMATION STEP
- AT INITIAL OBJ. FUNCTION EVALUATION
+
+0ITERATION NO.:    0    OBJECTIVE VALUE:   173292312160226.        NO. OF FUNC. EVALS.:   8
+ CUMULATIVE NO. OF FUNC. EVALS.:        8
+ NPARAMETR:  1.0000E+02  7.0000E+02  7.0000E+01  5.0000E+02  1.0000E+01  1.0000E+00  2.5000E-01  2.5000E-01  1.0000E+00  2.5000E-01
+             2.5000E-01  2.5000E-01
+ PARAMETER:  1.0000E-01  1.0000E-01  1.0000E-01  1.0000E-01  1.0000E-01  1.0000E-01  1.0000E-01  1.0000E-01  1.0000E-01  1.0000E-01
+             1.0000E-01  1.0000E-01
+ GRADIENT:  -3.4375E+03  3.4375E+03 -6.2500E+02  3.1250E+02 -9.3750E+02  7.7719E+05 -3.6734E+01 -3.7158E+01 -6.8171E-01 -3.8188E+01
+            -3.6467E+02  1.1611E+01
+
+0ITERATION NO.:   10    OBJECTIVE VALUE:   195851.509819884        NO. OF FUNC. EVALS.: 131
+ CUMULATIVE NO. OF FUNC. EVALS.:      139
+ NPARAMETR:  1.0194E+02  1.2439E+02  3.7436E+01  4.1091E+02  3.8861E+00  1.0000E-02  1.0550E-01  7.3654E+00  2.0483E+00  2.2223E+00
+             2.1998E-02  3.0118E-01
+ PARAMETER:  1.1918E-01 -1.6277E+00 -5.2585E-01 -9.6222E-02 -8.4517E-01 -9.8000E+00 -3.3138E-01  1.7915E+00  4.5852E-01  1.1924E+00
+            -1.1153E+00  1.9313E-01
+ GRADIENT:  -3.5982E+00 -1.9825E+01  9.5692E+00 -3.6179E+00  1.2951E+02  0.0000E+00 -2.0016E+00 -1.0824E+01 -2.0644E+01 -3.7355E+01
+            -3.7040E+02 -2.0304E+02
+
+0ITERATION NO.:   20    OBJECTIVE VALUE:   195730.485064571        NO. OF FUNC. EVALS.: 238
+ CUMULATIVE NO. OF FUNC. EVALS.:      377
+ NPARAMETR:  1.8628E+02  2.4241E+02  4.0829E+01  1.4792E+03  2.6158E+00  1.0000E-02  1.1012E-01  1.6208E+00  3.2055E+00  4.9517E+00
+             4.5130E-02  3.9630E-01
+ PARAMETER:  7.2207E-01 -9.6044E-01 -4.3911E-01  1.1846E+00 -1.2410E+00 -9.8000E+00 -3.0995E-01  1.0346E+00  6.8243E-01  1.5930E+00
+            -7.5595E-01  3.3036E-01
+ GRADIENT:   7.9702E+00 -1.3553E+01  4.2693E+00 -1.6514E+00 -4.0581E+01  0.0000E+00 -3.6456E+00 -4.9515E+01 -5.0351E+00 -2.0219E+01
+            -1.6791E+02 -1.5142E+02
+
+0ITERATION NO.:   22    OBJECTIVE VALUE:   195730.437367130        NO. OF FUNC. EVALS.:  79
+ CUMULATIVE NO. OF FUNC. EVALS.:      456
+ NPARAMETR:  1.8632E+02  2.4247E+02  4.0724E+01  1.4824E+03  2.6158E+00  1.0000E-02  1.1017E-01  1.6211E+00  3.1946E+00  4.9552E+00
+             4.5138E-02  3.9665E-01
+ PARAMETER:  7.2228E-01 -9.6020E-01 -4.4168E-01  1.1868E+00 -1.2410E+00 -9.8000E+00 -3.0970E-01  1.0347E+00  6.8073E-01  1.5934E+00
+            -7.5587E-01  3.3046E-01
+ GRADIENT:   0.0000E+00  0.0000E+00  0.0000E+00  0.0000E+00  0.0000E+00  0.0000E+00  0.0000E+00  0.0000E+00  0.0000E+00  0.0000E+00
+            -1.2352E+02 -1.5141E+02
 
  #TERM:
+0MINIMIZATION TERMINATED
+ DUE TO PROXIMITY OF LAST ITERATION EST. TO A VALUE
+ AT WHICH THE OBJ. FUNC. IS INFINITE (ERROR=136)
+0AT THE LAST COMPUTED INFINITE VALUE OF THE OBJ. FUNCT.:
+0PRED EXIT CODE = 1
+0INDIVIDUAL NO.       2   ID= 2.00000000000000E+00   (WITHIN-INDIVIDUAL) DATA REC NO.   1
+ THETA=
+  1.86E+02   2.42E+02   4.07E+01   1.48E+03   2.62E+00   1.00E-02   1.00E-02   1.00E-02
+ ETA=
+  3.18E-01   3.47E-01  -1.99E+01   1.55E+01   1.14E+00   2.11E+00
+ OCCURS DURING SEARCH FOR ETA AT A NONZERO VALUE OF ETA
+ A ROOT OF THE CHARACTERISTIC EQUATION IS ZERO BECAUSE
+ K*K32 IS MUCH SMALLER THAN  (K+K23+K32)**2.
+ PERHAPS K OR K32 IS VERY SMALL, OR K23 IS VERY LARGE.
+
+ NO. OF FUNCTION EVALUATIONS USED:      456
+ NO. OF SIG. DIGITS UNREPORTABLE
+0PARAMETER ESTIMATE IS NEAR ITS BOUNDARY
+
+ ETABAR IS THE ARITHMETIC MEAN OF THE ETA-ESTIMATES,
+ AND THE P-VALUE IS GIVEN FOR THE NULL HYPOTHESIS THAT THE TRUE MEAN IS 0.
+
+ ETABAR:        -4.0724E-02  9.8168E-01 -1.1364E+00  5.9372E-01  1.5876E-01  2.2857E+00
+ SE:             8.0017E-02  1.0700E+00  5.4870E-01  1.2967E+00  3.2926E-01  1.6976E-01
+ N:                       6           6           6           6           6           6
+
+ P VAL.:         6.1079E-01  3.5890E-01  3.8346E-02  6.4705E-01  6.2970E-01  2.6526E-41
+
+ ETASHRINKSD(%)  3.5315E+01  1.0000E-10  1.7626E+01  1.0000E-10  1.0000E-10  2.7648E+01
+ ETASHRINKVR(%)  5.8158E+01  1.0000E-10  3.2145E+01  1.0000E-10  1.0000E-10  4.7652E+01
+ EBVSHRINKSD(%)  7.3532E+01  6.7175E+00  2.5491E+01  3.3671E+01  2.7324E-01  1.3626E-05
+ EBVSHRINKVR(%)  9.2994E+01  1.2984E+01  4.4484E+01  5.6005E+01  5.4573E-01  2.7252E-05
+ RELATIVEINF(%)  5.8323E-10  8.5818E-09  1.6911E-08  2.6231E-08  9.9454E+01  1.0000E+02
+ EPSSHRINKSD(%)  1.0000E-10
+ EPSSHRINKVR(%)  1.0000E-10
+
   
- TOTAL DATA POINTS NORMALLY DISTRIBUTED (N):            0
- N*LOG(2PI) CONSTANT TO OBJECTIVE FUNCTION:    0.0000000000000000     
- OBJECTIVE FUNCTION VALUE WITHOUT CONSTANT:    1.3407807929942596E+154
- OBJECTIVE FUNCTION VALUE WITH CONSTANT:       1.3407807929942596E+154
+ TOTAL DATA POINTS NORMALLY DISTRIBUTED (N):           49
+ N*LOG(2PI) CONSTANT TO OBJECTIVE FUNCTION:    90.055976254057924     
+ OBJECTIVE FUNCTION VALUE WITHOUT CONSTANT:    195730.43736712978     
+ OBJECTIVE FUNCTION VALUE WITH CONSTANT:       195820.49334338383     
  REPORTED OBJECTIVE FUNCTION DOES NOT CONTAIN CONSTANT
   
- TOTAL EFFECTIVE ETAS (NIND*NETA):                             0
+ TOTAL EFFECTIVE ETAS (NIND*NETA):                            36
   
  #TERE:
- Elapsed estimation  time in seconds:     0.00
- #CPUT: Total CPU Time in Seconds,        0.011
+ Elapsed estimation  time in seconds:     7.53
+ Elapsed postprocess time in seconds:     0.04
+1
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ ************************************************************************************************************************
+ ********************                                                                                ********************
+ ********************               FIRST ORDER CONDITIONAL ESTIMATION WITH INTERACTION              ********************
+ #OBJT:**************                       MINIMUM VALUE OF OBJECTIVE FUNCTION                      ********************
+ ********************                                                                                ********************
+ ************************************************************************************************************************
+ 
+
+
+
+
+
+ #OBJV:********************************************   195730.437       **************************************************
+1
+ ************************************************************************************************************************
+ ********************                                                                                ********************
+ ********************               FIRST ORDER CONDITIONAL ESTIMATION WITH INTERACTION              ********************
+ ********************                             FINAL PARAMETER ESTIMATE                           ********************
+ ********************                                                                                ********************
+ ************************************************************************************************************************
+ 
+
+
+ THETA - VECTOR OF FIXED EFFECTS PARAMETERS   *********
+
+
+         TH 1      TH 2      TH 3      TH 4      TH 5      TH 6      TH 7      TH 8     
+ 
+         1.86E+02  2.42E+02  4.07E+01  1.48E+03  2.62E+00  1.00E-02  1.00E-02  1.00E-02
+ 
+
+
+ OMEGA - COV MATRIX FOR RANDOM EFFECTS - ETAS  ********
+
+
+         ETA1      ETA2      ETA3      ETA4      ETA5      ETA6     
+ 
+ ETA1
++        1.10E-01
+ 
+ ETA2
++        0.00E+00  1.62E+00
+ 
+ ETA3
++        0.00E+00  0.00E+00  3.19E+00
+ 
+ ETA4
++        0.00E+00  0.00E+00  0.00E+00  4.96E+00
+ 
+ ETA5
++        0.00E+00  0.00E+00  0.00E+00  0.00E+00  4.51E-02
+ 
+ ETA6
++        0.00E+00  0.00E+00  0.00E+00  0.00E+00  0.00E+00  3.96E-01
+ 
+
+
+ SIGMA - COV MATRIX FOR RANDOM EFFECTS - EPSILONS  ****
+
+
+         EPS1     
+ 
+ EPS1
++        1.00E+00
+ 
+1
+
+
+ OMEGA - CORR MATRIX FOR RANDOM EFFECTS - ETAS  *******
+
+
+         ETA1      ETA2      ETA3      ETA4      ETA5      ETA6     
+ 
+ ETA1
++        3.32E-01
+ 
+ ETA2
++        0.00E+00  1.27E+00
+ 
+ ETA3
++        0.00E+00  0.00E+00  1.79E+00
+ 
+ ETA4
++        0.00E+00  0.00E+00  0.00E+00  2.23E+00
+ 
+ ETA5
++        0.00E+00  0.00E+00  0.00E+00  0.00E+00  2.12E-01
+ 
+ ETA6
++        0.00E+00  0.00E+00  0.00E+00  0.00E+00  0.00E+00  6.30E-01
+ 
+
+
+ SIGMA - CORR MATRIX FOR RANDOM EFFECTS - EPSILONS  ***
+
+
+         EPS1     
+ 
+ EPS1
++        1.00E+00
+ 
+ Elapsed finaloutput time in seconds:     0.01
+1THERE ARE ERROR MESSAGES IN FILE PRDERR                                                                  
+ #CPUT: Total CPU Time in Seconds,        7.584
 Stop Time:
-Wed Jan  5 07:57:35 UTC 2022
+Wed Jan  5 07:58:45 UTC 2022
