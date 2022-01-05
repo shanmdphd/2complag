@@ -34,7 +34,7 @@ $THETA
   (0, 0.3, 1)
 
 $OMEGA
-  0 FIX
+  0.2
 $OMEGA BLOCK(2)
 0.16
 0.01 0.25
